@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marcel Osmond</title>
+  <meta name="description" content="Marcel Osmond, researcher at the intersection of AI and law: agentic AI governance, liability, safety evaluation, and comparative AI regulation.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%23111111'/><text x='16' y='21.5' font-family='Helvetica,Arial' font-size='12' font-weight='600' fill='white' text-anchor='middle'>MO</text></svg>">
+  <style>
+    :root {
+      --ink: #111;
+      --muted: #555;
+      --faint: #888;
+      --red: darkred;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      font-size: 15px;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+      color: var(--ink);
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    .wrapper {
+      margin: 0 auto;
+      max-width: 53rem;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+
+    a { color: inherit; text-decoration: none; cursor: pointer; }
+    a:hover { position: relative; top: -2px; }
+    p > a, li > a { color: var(--red); }
+    p > a:hover, li > a:hover { text-decoration: underline; }
+
+    /* ---------- header ---------- */
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding-top: 1.5em;
+      padding-bottom: .3em;
+      row-gap: .5em;
+    }
+
+    .name { font-size: 1.6em; font-weight: 500; margin: 0; }
+
+    nav { display: flex; flex-wrap: wrap; column-gap: 1em; row-gap: .4em; align-items: baseline; }
+
+    nav a { display: inline-block; padding: .5em; margin: -.2em -.5em -.5em; font-weight: 400; }
+
+    nav .email { font-size: .92em; color: var(--muted); padding: .5em; margin: -.2em -.5em -.5em; }
+
+    .sections {
+      margin: .1em 0 1em;
+      font-size: .82em;
+      color: #777;
+    }
+
+    .sections a { color: #777; padding: .25em; margin: -.25em; }
+
+    .sections a:hover { color: var(--ink); text-decoration: none; }
+
+    /* ---------- intro ---------- */
+
+    .intro {
+      display: flex;
+      gap: 1.8rem;
+      margin-top: .8em;
+      align-items: flex-start;
+    }
+
+    .intro .left { width: 25%; flex-shrink: 0; }
+
+    .intro .left img {
+      width: 100%;
+      border-radius: .2rem;
+      box-shadow: 0.05em 0.05em 0.2em rgba(0, 0, 0, 0.22);
+    }
+
+    .intro .right { flex: 1; }
+
+    .intro p { margin: .8em 0; font-size: 1.1em; line-height: 1.4; }
+
+    .intro p:first-child { margin-top: 0; }
+
+    /* ---------- typography ---------- */
+
+    h2 { font-size: 1.5em; font-weight: 500; margin: 1.9em 0 .6em; text-align: left; }
+    h3 { font-size: 1.15em; font-weight: 600; }
+
+    p, ul, ol { margin: .9em 0; font-size: 1.1em; line-height: 1.35; }
+
+    ul { list-style: square; padding-left: 1.1em; }
+
+    li { margin: .4em 0; }
+
+    strong { font-weight: 600; }
+
+    .date { color: var(--faint); }
+
+    /* ---------- publications ---------- */
+
+    .collection { list-style: none; padding: 0; margin: .3em 0 2em; }
+
+    .collection li { display: flex; margin-bottom: 1.6em; }
+
+    .collection .text { flex-grow: 1; display: flex; flex-direction: column; }
+
+    .collection h3 { margin: -.2em 0 .1em; }
+
+    .collection .authors { margin: .1em 0 0; font-size: .85em; color: #333; }
+
+    .collection .authors b { font-weight: 600; }
+
+    .collection .venues { margin: .1em 0 0; font-size: .9em; color: #000; }
+
+    .collection .buttons { margin: .3em 0 0; font-size: .88em; }
+
+    .collection .buttons a { color: var(--red); }
+
+    .collection .buttons .sep { color: var(--faint); margin: 0 .45em; }
+
+    /* ---------- footer ---------- */
+
+    footer {
+      margin-top: 2.4em;
+      padding-bottom: 2.8em;
+      color: var(--faint);
+      font-size: .85em;
+    }
+
+    @media (max-width: 600px) {
+      header { padding-top: 1.1em; }
+      .name { font-size: 1.45em; }
+      .intro { flex-direction: column; }
+      .intro .left { width: 45%; max-width: 180px; }
+      .sections { font-size: .8em; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="name">Marcel Osmond</div>
+      <nav aria-label="Contact links">
+        <span class="email">marcelosmond75(at)gmail(dot)com</span>
+        <a href="https://scholar.google.com/citations?view_op=list_works&amp;hl=fr&amp;user=H6eRoAMAAAAJ">Scholar</a>
+        <a href="https://www.linkedin.com/in/marcelosmond">LinkedIn</a>
+        <a href="https://github.com/Brokemountain">GitHub</a>
+      </nav>
+    </header>
+
+    <nav class="sections" aria-label="Sections">
+      <a href="#publications">Publications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="intro" id="about">
+      <div class="left">
+        <img src="photo.jpg" alt="Portrait of Marcel Osmond">
+      </div>
+      <div class="right">
+        <p>I am a research assistant at Queen Mary University of London under Prof. <a href="https://www.qmul.ac.uk/law/people/academic-staff/items/walker.html">George A. Walker</a>, and a visiting scholar at Peking University and affiliate researcher of the <a href="https://osslab-pku.org/">OSS-Lab@PKU-SEI</a>, supervised by Prof. <a href="https://minghuizhou.github.io/">Minghui Zhou</a>.</p>
+        <p>I am currently completing my double master between London and Singapore. Prior to my master, I received my bachelor's degree from Université Paris-Saclay.</p>
+      </div>
+    </section>
+
+    <section id="research">
+      <h2>Research interests</h2>
+      <p>I work on a variety of research directions on AI, AI and Law, ML, safety, alignment, technical governance and capabilities. My technical work spans structural causal models, deterministic multi-agent simulation, runtime control, and evaluation harnesses; on the legal side, I work on liability, causal attribution, and comparative regulation across the globe (expertise in the EU, UK, and China). I am currently based in Singapore.</p>
+      <ul>
+        <li><strong>Equilibrium-level harm in multi-agent systems.</strong> Harm that emerges from agent interaction even when no single agent has a privately profitable deviation, and why per-agent evaluation misses it.</li>
+        <li><strong>Runtime control of informational exclusion.</strong> How congestion and shared memory displace underrepresented evidence, and whether harness-level controllers can preserve service and state coverage without knowing which source is decisive.</li>
+        <li><strong>Causal attribution and responsibility.</strong> Time-unrolled structural causal models over weights, prompts, memory, and harness decisions; interventional replay and degree-of-responsibility measures with evidentiary weight in legal settings.</li>
+        <li><strong>Agent memory safety and auditability.</strong> The retention → discoverability → reachability → influence ladder and forensic audit protocols.</li>
+        <li><strong>Machine learning and AI.</strong> Foundations of LLMs and agents, evaluation methodology, and how emergent behaviour arises from systems-level interaction.</li>
+        <li><strong>Comparative AI governance.</strong> Regulation of high-capability systems across the globe, including machine-readable regulation and <a href="https://lawaigovhub.com">LawAI Gov Hub</a> (14,011 records, 205 jurisdictions).</li>
+      </ul>
+    </section>
+
+    <section id="news">
+      <h2>News</h2>
+      <ul>
+        <li><span class="date">2026.07</span> · “Infrastructure as Destiny” accepted by Data &amp; Policy, Cambridge University Press.</li>
+        <li><span class="date">2026.07</span> · “Business Compliance and Agentic AI Liability” accepted in Business Law Review, Volume 5, Issue 47.</li>
+        <li><span class="date">2026.07</span> · Main-conference paper accepted at WAIC Academic 2026 in Shanghai.</li>
+        <li><span class="date">2026.07</span> · KDD PILA paper accepted for oral presentation.</li>
+        <li><span class="date">2026.06</span> · Work accepted at ICML, UAI SafeAI, IJCAI-ECAI, and KDD workshops.</li>
+      </ul>
+    </section>
+
+    <section id="publications">
+      <h2>Selected publications</h2>
+      <ul class="collection">
+
+        <li>
+          <div class="text">
+            <h3>Trajectory-Based Liability: Regulating High-Capability Agentic AI in the 2026 Capability Frontier</h3>
+            <p class="authors"><b>Marcel Osmond</b>*</p>
+            <p class="venues">Journal of AI Law and Regulation (AIRe 2/2026) · Tsinghua China Law Review award-winning paper</p>
+            <p class="buttons"><a href="https://aire.lexxion.eu/article/AIRE/2026/2/5">Paper</a></p>
+          </div>
+        </li>
+
+        <li>
+          <div class="text">
+            <h3>Liability Frameworks for Agentic AI Systems</h3>
+            <p class="authors"><b>Marcel Osmond</b>*</p>
+            <p class="venues">ICML 2026 Workshop on Agents in the Wild · WAIC Academic 2026, Shanghai · forthcoming in Springer proceedings · Oral*</p>
+            <p class="buttons"><a href="https://openreview.net/pdf?id=SZhxWYzKb1">Link</a></p>
+          </div>
+        </li>
+
+        <li>
+          <div class="text">
+            <h3>Equilibrium-Level Harm in Multi-Agent AI Systems: Why Individual Evaluation Fails</h3>
+            <p class="authors"><b>Marcel Osmond</b>*, Bektur Kenzhebaev</p>
+            <p class="venues">KDD 2026 Workshop on Evaluation and Trustworthiness of Agentic AI</p>
+            <p class="buttons"><a href="https://kdd-eval-workshop.github.io/agenticai-evaluation-kdd2026/assets/papers/39_Equilibrium_Level_Harm_in_M.pdf">PDF</a><span class="sep">|</span><a href="https://kdd-eval-workshop.github.io/agenticai-evaluation-kdd2026/assets/papers/posters/39_Equilibrium_Level_Harm_in_M_Poster.pdf">Poster</a></p>
+          </div>
+        </li>
+
+        <li>
+          <div class="text">
+            <h3>Auditable Personal Memory for User-Adaptive Agents</h3>
+            <p class="authors"><b>Marcel Osmond</b>*</p>
+            <p class="venues">KDD 2026 PILA Workshop · Oral*</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="text">
+            <h3>Auditable Memory as a Safety Requirement for Agentic AI</h3>
+            <p class="authors"><b>Marcel Osmond</b>*, Tonghao Chen, Zhihang Tan, Bektur Kenzhebaev</p>
+            <p class="venues">UAI 2026 SafeAI Workshop</p>
+            <p class="buttons"><a href="https://openreview.net/pdf?id=aboNB674Xz">Link</a></p>
+          </div>
+        </li>
+
+        <li>
+          <div class="text">
+            <h3>Verification Burden as Stakeholder-Centered Transparency: Evaluating Legal AI for Access-to-Justice Users</h3>
+            <p class="authors"><b>Marcel Osmond</b>*</p>
+            <p class="venues">IJCAI-ECAI 2026 Workshop · Oral*</p>
+            <p class="buttons"><a href="https://clear-ws.github.io/2026/">Workshop</a></p>
+          </div>
+        </li>
+
+        <li>
+          <div class="text">
+            <h3>Infrastructure as Destiny: Why AI Memory and Evaluation Architectures Determine Sovereign Governance Capacity</h3>
+            <p class="authors"><b>Marcel Osmond</b>*</p>
+            <p class="venues">Data for Policy 2026 Conference · Data &amp; Policy, Cambridge University Press, accepted · Oral*</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="text">
+            <h3>Business Compliance and Agentic AI Liability</h3>
+            <p class="authors"><b>Marcel Osmond</b>*</p>
+            <p class="venues">Business Law Review, Volume 5, Issue 47, 2026</p>
+            <p class="buttons"><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=fr&amp;user=H6eRoAMAAAAJ&amp;citation_for_view=H6eRoAMAAAAJ:YsMSGLbcyi4C">Scholar record</a></p>
+          </div>
+        </li>
+
+        <li>
+          <div class="text">
+            <h3>Mind the Gap: How Technical Mechanisms of Agentic AI Outpace Law</h3>
+            <p class="authors"><b>Marcel Osmond</b>*, T. Jego</p>
+            <p class="venues">Preprint</p>
+            <p class="buttons"><a href="https://arxiv.org/abs/2603.27075">Link</a></p>
+          </div>
+        </li>
+
+      </ul>
+    </section>
+
+    <section id="talks">
+      <h2>Teaching, lectures, presentations</h2>
+      <ul>
+        <li><strong>Assistant teacher</strong>, Centre for Commercial Law Studies, Queen Mary University of London. <span class="date">2026 to present</span></li>
+        <li><strong>Tsinghua University</strong>, Beijing. Invited research presentation on agentic AI liability, compliance verification, and governance frameworks, with Prof. Shen Weixing. <span class="date">July 2026</span></li>
+        <li><strong>Peking University (IGCU)</strong>, Beijing. Guest speaker invited by Prof. Wang Dong at the Institute for Global Cooperation and Understanding, on AI regulation, comparative legal frameworks, and global AI governance. <span class="date">July 2026</span></li>
+        <li><strong>Renmin University of China</strong>, Beijing. Research exchange on AI governance, digital sovereignty, and comparative regulation, hosted by Dean Yang Dong and Prof. Zhang Jiyu. <span class="date">July 2026</span></li>
+        <li><strong>Wuhan University</strong>. Deheng Visiting Scholar hosted by Prof. Huang Zhixiong at the Institute of International Law, research on Chinese AI regulatory frameworks, delivered the lecture "Agentic AI Governance Mechanisms". <span class="date">May to June 2026</span></li>
+        <li><strong>Xiamen University</strong>. Guest speaker on "Agentic AI Governance Mechanisms and the EU AI Act". <span class="date">June 2026</span></li>
+        <li><strong>Fidelity (Xinshi) Law Firm</strong>, Xiamen. Guest speaker on "Comparison of AI Governance Paths in the US and Europe" and "Corporate Compliance Review". <span class="date">June 2026</span></li>
+        <li><strong>WAIC Academic 2026</strong>, Shanghai. Main conference presentation.</li>
+        <li><strong>KDD 2026 PILA Workshop</strong>. Oral presentation.</li>
+        <li><strong>IJCAI-ECAI 2026 Workshop</strong>. Oral presentation.</li>
+        <li><strong>Data for Policy 2026</strong>. Oral presentation.</li>
+      </ul>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <ul>
+        <li><strong>Queen Mary University of London</strong>, research assistant and assistant teacher, Centre for Commercial Law Studies. <span class="date">January 2026 to present</span></li>
+        <li><strong>Peking University</strong>, visiting scholar (residency November 2026 to January 2027) and affiliate researcher, OSS-Lab@PKU-SEI. <span class="date">July 2026 to present</span></li>
+        <li><strong>ARCIDS-Lab</strong> (Key Laboratory of Archival Intelligent Development and Service), affiliate researcher. <span class="date">May 2026 to present</span></li>
+        <li><strong>Tsinghua University</strong>, visiting student and guest speaker. <span class="date">July 2026</span></li>
+        <li><strong>Peking University (IGCU)</strong>, guest speaker. <span class="date">July 2026</span></li>
+        <li><strong>Renmin University of China</strong>, visiting scholar and guest researcher. <span class="date">July 2026</span></li>
+        <li><strong>Wuhan University</strong>, Deheng Visiting Scholar and guest speaker. <span class="date">May to June 2026</span></li>
+        <li><strong>Xiamen University</strong>, guest speaker. <span class="date">June 2026</span></li>
+      </ul>
+    </section>
+
+
+    <section id="awards">
+      <h2>Awards</h2>
+      <ul>
+        <li>French scholarship</li>
+        <li>Queen Mary University of London scholarship</li>
+        <li>Tsinghua China Law Review Award</li>
+        <li>WAIC Academic 2026 (Shanghai) student travel grant</li>
+      </ul>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>Master (joint degree, double master)</strong>, Queen Mary University of London &amp; Singapore Management University. <span class="date">2026–2027</span></li>
+        <li><strong>Bachelor</strong>, Université Paris-Saclay, Law and Computer Science. <span class="date">2022–2025</span></li>
+      </ul>
+    </section>
+
+    <footer id="contact">
+      <span>© 2026 Marcel Osmond</span>
+    </footer>
+  </div>
+</body>
+</html>
